@@ -10,10 +10,16 @@ const htmlFilePaths = ["index.html", "about/index.html"].map((path) =>
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  root: "src",
+  root: rootDir,
+  resolve: {
+    alias: {
+      "~/": resolve(__dirname, rootDir, "/"),
+    },
+  },
   plugins: [react()],
   build: {
     outDir: "../dist",
+    emptyOutDir: false,
     rollupOptions: {
       input: htmlFilePaths,
     },
