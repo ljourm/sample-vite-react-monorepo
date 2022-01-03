@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.li {
+  list-style: none;
+
+  &:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+}
