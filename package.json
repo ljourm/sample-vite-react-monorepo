@@ -15,8 +15,10 @@
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.28.0",
     "jest": "^27.4.5",
+    "prettier": "^2.5.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   },
@@ -24,6 +26,8 @@
   "scripts": {
     "lint": "eslint ./**/*{js,jsx,ts,tsx}",
     "lint:fix": "eslint --fix ./**/*{js,jsx,ts,tsx}",
+    "format": "prettier -c ./**/*",
+    "format:fix": "prettier -w ./**/*",
     "test": "jest"
   }
 }

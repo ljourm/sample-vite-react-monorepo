@@ -1,0 +1,13 @@
+.node-version
+package.json
+package-lock.json
+yarn.lock
+yarn-error.log
+.gitignore
+.prettierignore
+
+.env*
+*.svg
+*.png
+*.jpg
+*.gif
