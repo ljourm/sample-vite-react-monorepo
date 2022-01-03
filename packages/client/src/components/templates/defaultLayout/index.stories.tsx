@@ -2,7 +2,7 @@ import Component, { Props } from "./";
 import { Meta, Story } from "@storybook/react";
 
 export default {
-  title: "Client/ArticleHeadline",
+  title: "Client/DefaultLayout",
   component: Component,
 } as Meta;
 
@@ -10,5 +10,5 @@ const Template: Story<Props> = (args) => <Component {...args} />;
 
 export const Standard = Template.bind({});
 Standard.args = {
-  children: "headline",
+  children: <p>content</p>,
 };
