@@ -16,12 +16,12 @@ export default defineConfig({
       "~/": resolve(__dirname, rootDir, "/"),
     },
   },
-  plugins: [react()],
   build: {
-    outDir: "../dist",
+    outDir: resolve(__dirname, "dist"),
     emptyOutDir: false,
     rollupOptions: {
       input: htmlFilePaths,
     },
   },
+  plugins: [react()],
 });
