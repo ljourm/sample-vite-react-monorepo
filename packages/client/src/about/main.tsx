@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const appTitle = import.meta.env.VITE_APP_TITLE;
-const sampleNumber = import.meta.env.VITE_SAMPLE_NUMBER;
+const apiBaseUri = import.meta.env.VITE_API_BASE_URI;
 
 ReactDOM.render(
   <React.StrictMode>
     <p>app title: {appTitle}</p>
-    <p>sample number: {sampleNumber}</p>
+    <p>api uri: {apiBaseUri}</p>
   </React.StrictMode>,
   document.getElementById("root")
 );
