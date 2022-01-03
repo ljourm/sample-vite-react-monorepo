@@ -4,9 +4,7 @@ import react from "@vitejs/plugin-react";
 
 const rootDir = "src/pages";
 
-const htmlFilePaths = ["index.html", "about/index.html"].map((path) =>
-  resolve(__dirname, rootDir, path)
-);
+const htmlFilePaths = ["index.html", "about/index.html"].map((path) => resolve(__dirname, rootDir, path));
 
 // https://vitejs.dev/config/
 export default defineConfig({
