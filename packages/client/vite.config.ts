@@ -1,10 +1,9 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import pageList from "./pagelist";
 
 const rootDir = "src/pages";
-
-const htmlFilePaths = ["index.html", "about/index.html"].map((path) => resolve(__dirname, rootDir, path));
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,7 +17,7 @@ export default defineConfig({
     outDir: resolve(__dirname, "dist"),
     emptyOutDir: false,
     rollupOptions: {
-      input: htmlFilePaths,
+      input: pageList.map((path) => resolve(__dirname, rootDir, path)),
     },
   },
   plugins: [react()],
