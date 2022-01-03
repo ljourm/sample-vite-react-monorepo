@@ -2,7 +2,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-const rootDir = "src";
+const rootDir = "src/pages";
 
 const htmlFilePaths = ["index.html", "about/index.html"].map((path) =>
   resolve(__dirname, rootDir, path)
@@ -13,7 +13,7 @@ export default defineConfig({
   root: rootDir,
   resolve: {
     alias: {
-      "~/": resolve(__dirname, rootDir, "/"),
+      "~/": resolve(__dirname, "src") + "/",
     },
   },
   build: {
