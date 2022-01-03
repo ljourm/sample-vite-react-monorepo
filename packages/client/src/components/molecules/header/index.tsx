@@ -12,8 +12,8 @@ export default function Header() {
     <header className={styles.header}>
       <ProductLogo />
       <ul className={styles.ul}>
-        {links.map((link) => (
-          <li className={styles.li}>
+        {links.map((link, index) => (
+          <li key={index} className={styles.li}>
             <a href={link.path}>{link.name}</a>
           </li>
         ))}
