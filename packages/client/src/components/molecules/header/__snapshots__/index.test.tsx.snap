@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<DocumentFragment>
+  <header>
+    <img
+      alt="product logo"
+      class="product-logo"
+      src=""
+    />
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          ほーむ
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about/"
+        >
+          あばうと
+        </a>
+      </li>
+    </ul>
+  </header>
+</DocumentFragment>
+`;
