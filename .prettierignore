@@ -4,7 +4,9 @@ package-lock.json
 yarn.lock
 yarn-error.log
 .gitignore
-.prettierignore
+coverage
+
+packages/client/dist
 
 .env*
 *.svg

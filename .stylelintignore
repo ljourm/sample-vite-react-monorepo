@@ -1,0 +1,4 @@
+coverage
+
+packages/client/public
+packages/client/dist

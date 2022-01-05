@@ -1,0 +1,5 @@
+node_modules
+coverage
+
+packages/client/public
+packages/client/dist
