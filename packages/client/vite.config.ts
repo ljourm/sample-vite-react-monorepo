@@ -8,6 +8,7 @@ const rootDir = "src/pages";
 // https://vitejs.dev/config/
 export default defineConfig({
   root: rootDir,
+  publicDir: resolve(__dirname, "public"),
   resolve: {
     alias: {
       "~/": resolve(__dirname, "src") + "/",
