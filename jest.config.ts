@@ -1,27 +1,5 @@
 module.exports = {
-  testEnvironment: "jsdom",
-  roots: ["<rootDir>/"],
-  transform: {
-    "^.+\\.(t|j)sx?$": [
-      "@swc/jest",
-      {
-        sourceMaps: true,
-        jsc: {
-          transform: {
-            react: {
-              runtime: "automatic",
-            },
-          },
-        },
-      },
-    ],
-  },
-  moduleFileExtensions: ["js", "jsx", "ts", "tsx"],
-  moduleNameMapper: {
-    "^~/images": "<rootDir>/packages/client/src/mocks/fileMock.js", // TODO: client以外に対応できていない。要検討。
-    "^(.*).s?css$": "<rootDir>/packages/client/src/mocks/fileMock.js",
-    "^~/(.*)$": "<rootDir>/packages/client/src/$1",
-  },
+  projects: ["<rootDir>/packages/client/jest.unit.config.ts", "<rootDir>/packages/client/jest.e2e.config.ts"],
   collectCoverage: true,
   coverageReporters: ["html", "text-summary"],
   collectCoverageFrom: [
